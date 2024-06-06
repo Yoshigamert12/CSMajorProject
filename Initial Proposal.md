@@ -4,10 +4,10 @@ _Please enter your project information below for your capstone project idea and 
 # Outline
 #### Basic Description of your project/idea
 - 
-making a similar concept to the first level of the Pac Man Arcade Game
+im making a text based adventure about a life 
 #### Additional Details, how you envision it working, important notes to consider, etc...
 - 
-the user moves Pac Man around the map to collect all of the pellets once all of them are collected the game ends and there will be at least 1 ghost following him
+the user goes through and adventure and their choices are recorded and depending on their score they will get a special ending
 #### How will you incoporate each of the following:
 **Module 1 - Variables and Output**
 - A
