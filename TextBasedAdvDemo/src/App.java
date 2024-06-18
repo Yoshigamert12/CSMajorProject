@@ -6,7 +6,7 @@ public class App {
     private static int[][] QROUTE; //Next question
     private static int[][] QVAL; //Stores choice consequence/affect
     private static int[] userChoice; //Stores the user responses
-    private static int numofQ = 30; //Number of questions
+    private static int numofQ = 33; //Number of questions
     private static int maxChoices = 3; //number of options for response
     // Make the Counter
     public static void main(String[] args) throws Exception {
@@ -18,7 +18,7 @@ public class App {
             //Prompt the answer with the question
             System.out.println(QTEXT[i]);
             int inp = keys.nextInt();
-            System.out.println("Your choice was " + inp + ". Your Aura is affected " + QVAL[i][inp]);
+            
 
             //Do we need to skip?
             if (QROUTE[i][inp] > -1) {
@@ -48,6 +48,7 @@ public class App {
                 QROUTE[i][j] = -1;
             }
         }
+
 
         //Question database
         for(int i = 0; i<numofQ; i++) {
@@ -142,6 +143,7 @@ public class App {
                     break;
                 case 6: // ENDING
                     QTEXT[i] = "You went to Bed! Sweet Dreams!";
+                    
                     QTEXT[i] = QTEXT[i] + "\n type 0 to Start Over";
                     QVAL[i][0] = 0;
                     QROUTE[i][0] = 0 ;
@@ -197,7 +199,7 @@ public class App {
                     QROUTE[i][1] = 10;
 
                     QVAL[i][2] = 80; //Option 3 affect
-                    QROUTE[i][2] = 6;
+                    QROUTE[i][2] = 22;
                     break;
                 case 10:
                     QTEXT[i] = "You guys went to your friends house! What are you fellas doing its yo choice?";
@@ -212,7 +214,7 @@ public class App {
                     QROUTE[i][1] = 12;
 
                     QVAL[i][2] = 90; //Option 3 affect
-                    QROUTE[i][2] = 6;
+                    QROUTE[i][2] = 19;
 
                     break;
                 case 11:
@@ -361,17 +363,17 @@ public class App {
                     QROUTE[i][2] = 19;
                     break;
                 case 21: 
-                QTEXT[i] = "You Crushed Your Friends in Mario Party! its getting late so you head home! what do you do when home?";
-                QTEXT[i] = QTEXT[i] + "\n type 0 play league of legends till next morning";
-                QTEXT[i] = QTEXT[i] + "\n type 1 to go to bed";
-                
-                QVAL[i][0] = -500000; //Option 1 affect
-                QROUTE[i][0] = 16 ;
+                    QTEXT[i] = "You Crushed Your Friends in Mario Party! its getting late so you head home! what do you do when home?";
+                    QTEXT[i] = QTEXT[i] + "\n type 0 play league of legends till next morning";
+                    QTEXT[i] = QTEXT[i] + "\n type 1 to go to bed";
+                    
+                    QVAL[i][0] = -500000; //Option 1 affect
+                    QROUTE[i][0] = 16 ;
 
-                QVAL[i][1] = 40; //Option 2 affect
-                QROUTE[i][1] = 6;
+                    QVAL[i][1] = 40; //Option 2 affect
+                    QROUTE[i][1] = 6;
 
-                QVAL[i][2] = 0; //Option 3 affect
+                    QVAL[i][2] = 0; //Option 3 affect
                 
                     break;
                 case 22: 
@@ -407,7 +409,7 @@ public class App {
                     
                     break;
                 case 24:
-                    QTEXT[i] = "You and your friends go with BB to this secret place. you guys head inside adn immediatley BB is put in his place by some Mob members who he owes money to! What do you want to do?";
+                    QTEXT[i] = "You and your friends go with BB to this secret place. you guys head inside and immediatley BB is put in his place by some Mob members who he owes money to! What do you want to do?";
                     QTEXT[i] = QTEXT[i] + "\n type 0 Help BB";
                     QTEXT[i] = QTEXT[i] + "\n type 1 Run for your Life";
                     
@@ -466,7 +468,7 @@ public class App {
                     
                     break;
                 case 28: // ENDING
-                    QTEXT[i] = "You Chose to continue running but there was a rock placed on the ground for the sole purpose of tripping someone and unfourtunatley that was you and your friends left you for the Mob";
+                    QTEXT[i] = "You Chose to continue running but there was a rock placed on the ground for the sole purpose of tripping someone and unfourtunatley that was you. And your friends left you for the Mob";
                     
                     QTEXT[i] = QTEXT[i] + "\n type 0 to Start Over";
                     QVAL[i][0] = 0;
@@ -496,6 +498,7 @@ public class App {
 
                     QVAL[i][2] = -500000; //Option 3 affect
                     QROUTE[i][2] = 32;
+                    break;
                 case 30: // ENDING
                     QTEXT[i] = " You went for a punch and Missed then BB got the Advantage GAME OVER";
 
@@ -527,7 +530,7 @@ public class App {
                     QROUTE[i][2] = 29;
                     break;
                 case 32: // ENDING
-                    QTEXT[i] = "You went for a Lick no you dont get to continue playing for making that decision not even a continue please close the final project and have a good reflection on yourself";
+                    QTEXT[i] = "You went for a Lick no you don't get to continue playing for making that decision not even a continue please close the final project and have a good reflection on yourself";
                     break;
                 case 33: // ENDING
                     QTEXT[i] = "Thank You for Trying this Project to its fullest!";
