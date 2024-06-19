@@ -4,10 +4,10 @@ _Please enter your project information below for your capstone project idea and 
 # Outline
 #### Basic Description of your project/idea
 - 
-im making a text based adventure about a life 
+im making a text based adventure about a day in a life
 #### Additional Details, how you envision it working, important notes to consider, etc...
 - 
-the user goes through and adventure and their choices are recorded and depending on their score they will get a special ending
+the user goes through and adventure and their choices are recorded and depending on their choices they will get a special ending
 #### How will you incoporate each of the following:
 **Module 1 - Variables and Output**
 - A
